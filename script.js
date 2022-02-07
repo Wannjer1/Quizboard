@@ -1,7 +1,7 @@
 
 const quizData = [
     {
-        qustion:"Which language runs in a web browser?",
+        question:"Which language runs in a web browser?",
         a:"Java",
         b:"Python",
         c:"C",
@@ -10,7 +10,7 @@ const quizData = [
     },
 
     {
-        qustion:"What year was Javascript launched?",
+        question:"What year was Javascript launched?",
         a:"1996",
         b:"1995",
         c:"1994",
@@ -19,7 +19,7 @@ const quizData = [
     },
     
     {
-        qustion:"Which of the folowing is not a data type?",
+        question:"Which of the folowing is not a data type?",
         a:"Booleans",
         b:"Numbers",
         c:"Variables",
@@ -28,7 +28,7 @@ const quizData = [
     },
 
     {
-        qustion:"Identify the logical operator in the list below?",
+        question:"Identify the logical operator in the list below?",
         a:"===",
         b:"<=",
         c:"&&",
@@ -37,7 +37,7 @@ const quizData = [
     },
 
     {
-        qustion:"Which of the following is not a promitive data type",
+        question:"Which of the following is not a promitive data type",
         a:"String",
         b:"Array",
         c:"Number",
@@ -59,4 +59,37 @@ const d_text=document.getElementById('d_text')
 const submitButn=document.getElementById('submit')
 
 
+let currentQuiz=0
+let score=0
 
+loadQuiz()
+
+function loadQuiz() {
+    deselectAnswers()
+
+    const currentQuizData= quizData[currentQuiz]
+
+    questionEl.innerText= currentQuizData.question
+    a_text.innerText=currentQuizData.a
+    b_text.innerText=currentQuizData.b
+    c_text.innerText=currentQuizData.c
+    d_text.innerText=currentQuizData.d
+
+}
+
+
+function deselectAnswers() {
+    answerElis.forEach(answerEls=>answerEls.checked=false)
+}
+
+function getSelected() {
+    let answerEls
+    answerEls.forEach(answerE1 =>{
+        if(answerE1.checked) {
+            answer= answerE1.id
+        }
+    })
+
+}
+
+return answer
