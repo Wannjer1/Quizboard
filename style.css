@@ -75,6 +75,28 @@
     background-color: #ffc30b;
 }
 
+.test{
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 15rem;
+    line-height: 1.6;
+    font-size: large;
+    font-weight: bold;
+}
+ .test button{
+     background-color: #424242;
+     color: #ffc30b;
+     padding: 12PX 20px;
+     border-radius: 20PX;
+     font-size: larger;
+     font-weight: bolder;
+     margin-top: 10rem;
+     width: 15rem;
+     
+     
+ }
+
 /* footer section  */
 .footcont{
     display: inline-flex;
