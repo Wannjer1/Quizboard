@@ -16,7 +16,7 @@
     height: 60px;
     max-width: 100%;
     display: flex;
-    background-color: #424242;
+    background-color: rgba(0, 0, 0, 0.9) ;
 }
 
 .navbar{
@@ -85,7 +85,7 @@
     font-weight: bold;
 }
  .test button{
-     background-color: #424242;
+     background-color: rgba(0, 0, 0, 0.7);
      color: #ffc30b;
      padding: 12PX 20px;
      border-radius: 20PX;
@@ -101,7 +101,7 @@
 .footcont{
     display: inline-flex;
     align-items: center;
-    background-color: #424242;
+    background-color: rgba(0, 0, 0, 0.9) ;
     color: yellow;
     width: 100%;
     height: 40px;
@@ -121,63 +121,68 @@
     margin-left: 30px;
 }
 
+/* quiz section */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-h1{
-    font-size: 5.4rem;
-    color: #fff;
-    margin-bottom: 5rem;
-}
-
-h2{
-    font-size: 4.2rem;
-    margin-bottom: 4rem;
-}
-
-.container{
-    width: 100vw;
+.quizsection{
+    width: 100%;
     height: 100vh;
+    background-color: #ffc30b;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 80rem;
-    margin: 0 auto;
-    padding: 2 rem;
-}
-
-.flex-column{
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-center{
     justify-content: center;
     text-align: center;
 }
 
-.justify-center{
-    justify-content: center;
+.quiz-container{
+    background-color: rgba(0, 0, 0, 0.9) ;
+    border-radius: 20px;
+    width: 500px;
+    height: fit-content;
+    overflow: hidden;
 }
 
-.text-center{
+.quiz-header{
+    padding: 50px;
+    color:#ffc30b;
+    line-height: 1.6;
+
+}
+
+.quiz-header h2{
+    padding: 20px;
     text-align: center;
 }
 
-.hidden{
-    
-} */
+.quiz-header ul{
+    list-style: none;
+    text-align: justify;
+    padding: 0;
+}
+
+ul li label{
+    cursor: pointer;
+}
+
+#submit{
+    padding: 20px;
+    background-color: black;
+    color: #ffc30b;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    border: none;
+}
+
+#submit:hover{
+    background-color: antiquewhite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
