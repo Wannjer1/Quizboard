@@ -90,6 +90,7 @@ function getSelected() {
         }
     })
 
+    return answer
 }
 
-return answer
+
